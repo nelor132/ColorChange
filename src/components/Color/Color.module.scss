@@ -1,0 +1,46 @@
+.color {
+  width: auto;
+  min-height: 100%;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .lock {
+    margin-top: 5%;
+    margin-bottom: 15px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .this-color {
+    border: none;
+    background: none;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: .3);
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .color {
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+    flex-direction: row;
+    .color-name {margin: 0;}
+    .lock {
+      margin: 0;
+    }
+  }
+
+
+}

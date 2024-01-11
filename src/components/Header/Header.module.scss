@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding: 0 16px;
+
+  .heder-logo-instrucrion {
+    min-width: 500px;
+    max-width: max-content;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .logo {
+      width: 110px;
+      height: 18px;
+      background: url(../../../assets/svg/logo.svg) no-repeat no-repeat center;
+      background-size: contain;
+    }
+
+    .instruction {
+      margin-left: 32px;
+      color: #7d7c83;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .header {
+    .heder-logo-instrucrion {
+      min-width: 100%;
+      justify-content: center;
+      .instruction {
+        display: none;
+      }
+    }
+  }
+}
